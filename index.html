@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='jxrl'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>首页</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+	<div class="top-linkadd">
+		<a href="#" class="">加入收藏</a><a href="#" class="">|</a><a href="#" class="">进入官网</a>
+	</div>
+	<!-- 导航条 -->
+	<!-- <div class="container jxrl-container" > -->
+	  	<nav class="navbar navbar-static-top jxrlnav" role="navigation">
+		    <div class="container jxrl-container">
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+	     		 	<a href="#">
+	       		 		<img src="img/top_logo.png">
+	   	   		 	</a>
+	    	    </div>
+	    	  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	     			<ul class="nav navbar-nav navbar-right row navlink">
+	       				<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+		       				<a href="index.html">
+			       				<i class="iconfont">&#xe60a;</i>
+			       				<p>首页</p>
+		       				</a>
+	       				</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="about.html">
+		        				<i class="iconfont">&#xe607;</i>
+		        				<p>关于</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="news.html">
+		        				<i class="iconfont">&#xe88a;</i>
+		        				<p>新闻</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="services.html">
+		        				<i class="iconfont">&#xe88c;</i>
+		        				<p>服务</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="#">
+		        				<i class="iconfont">&#xe603;</i>
+		        				<p>招聘</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="contact.html">
+		        				<i class="iconfont">&#xe88b;</i>
+		        				<p>联系</p>
+	        				</a>
+	        			</li>
+	     			</ul>
+   			 	</div><!-- /.navbar-collapse -->
+		  	</div> <!-- /.container-fluid -->
+		</nav>
+	<!-- </div> -->
+	<!-- 导航条结束 -->
+	<!-- 广告banner开始 -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	 	 <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+	
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="img/banner-1.jpg" alt="...">
+			    </div>
+			    <div class="item">
+			      <img src="img/banner-2.jpg" alt="...">
+			 	</div>
+		 		<div class="item">
+			      <img src="img/banner-3.jpg" alt="...">
+			 	</div>
+		  </div>
+  		<!-- Controls -->
+	 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		    <span class="sr-only">Previous</span>
+	 	 </a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		    <span class="sr-only">Next</span>
+		</a>
+    </div>
+<!-- 广告banner结束 -->
+<!-- 立即了解开始 -->
+	<div class="container-fluid row know">
+		<div class="col-lg-12 col-md-12 col-xs-12">
+			<a href="">
+				<img src="img/ljlj.jpg" class="img-responsive" alt="">
+			</a>
+		</div>
+	</div>
+<!-- 立即了解结束 -->
+	<!-- 服务TAB标价开始 -->
+	<div class="container-fluid service" ng-controller='myTab' style=''>
+		<div class="row title-box">
+			<div class="col-lg-offset-5 col-lg-1 col-md-offset-4 col-md-2 col-xs-offset-2 col-xs-4 title1" ng-class="{true:'focus',false:''}[t==1]" ng-click='t=1'>企业服务</div>
+			<div class="col-lg-1 col-md-2 col-xs-4 title2" ng-class="{true:'focus',false:''}[t==2]" ng-click='t=2'>员工服务</div>
+		</div>
+		
+		<div class="row">
+			<div class="container col-xs-12">
+				<div class="row tab " ng-show='t==1'>
+					<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>派遣服务</h3>
+	            		<p>派遣服务  由派遣单位与用人单位签订合作协议，将与其签订劳动合同的劳动者派…</p>
+	            		<a href="">立即了解</a>
+	  				</div>
+					<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>外包服务</h3>
+			            <p>劳务外包 劳务外包是指业务外包，也就是公司的一部分工作由外包公司来完成，…</p>
+			            <a href="">立即了解</a>
+	  				</div>
+	  				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>招聘服务</h3>
+	            		<p>招聘服务  此处指代理招聘，是指由专业的人才招聘专员代理用人单位招募人才的…</p>
+	                   <a href="">立即了解</a>
+	  				</div>
+	  				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>托管服务</h3>
+	           			<p>托管服务  指企业根据需要将某一项、几项或者全部人力资源管理工作或职能托管…</p>
+	           			<a href="">立即了解</a>
+	  				</div>
+	  				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>人才测评</h3>
+	            		<p>人才测评  指通过一系列科学的手段和方法对人的基本素质及其绩效进行测量和评…</p>
+	                    <a href="">立即了解</a>
+	  				</div>
+	  				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+	    				<h3>咨询服务</h3>
+	           			<p>咨询服务   指咨询受托方(咨询人员或咨询机构)根据委托方(客户)提出的要求，…</p>
+	            		<a href="">立即了解</a>
+	  				</div>
+				</div>
+				<div class="row tab tab2" ng-show='t==2'>
+					<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>养老保险</h3>
+			            <p>养老保险  全称社会基本养老保险，是国家和社会根据一定的法律和法规，为解决…</p>
+			            <a href="/nrcpfw/136.html">立即了解</a>
+	         		</div>
+	 				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>医疗保险</h3>
+			            <p>医疗保险  指通过国家立法，按照强制性社会保险原则基本医疗保险费应由用人单…</p>
+			            <a href="/nrcpfw/137.html">立即了解</a>
+	          		</div>
+	 				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>失业保险</h3>
+			            <p>失业保险  是指国家通过立法强制实行的，由社会集中建立基金，对因失业而暂时…</p>
+			            <a href="/nrcpfw/138.html">立即了解</a>
+	          		</div>
+	  				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>生育保险</h3>
+			            <p>生育保险  是国家通过立法，在怀孕和分娩的妇女劳动者暂时中断劳动时，由国家…</p>
+			            <a href="/nrcpfw/139.html">立即了解</a>
+	          		</div>
+					<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>工伤保险</h3>
+			            <p>工伤保险  中华人民共和国境内的企业、事业单位、社会团体、民办非企业单位、…</p>
+			            <a href="/nrcpfw/140.html">立即了解</a>
+	          		</div>
+	 				<div class="wrap effect col-lg-4 col-md-6 col-xs-12 ListDiv">
+			            <h3>公积金服务</h3>
+			            <p>住房公积金  是指国家机关、国有企业、城镇集体企业、外商投资企业、城镇私营…</p>
+			            <a href="/nrcpfw/129.html">立即了解</a>
+	          		</div>
+
+				</div>
+			</div>
+		</div>
+		
+		</div>	
+		
+	</div>
+	
+	
+	<!-- 服务TAB标签结束 -->
+<!-- 企业简介开始 -->
+	<div class="container col-xs-12 jxrl-qyjj" style="">
+		<div class="row" >
+			<img src="img/img1.png" alt="" class="col-lg-6 col-md-6 col-xs-12 img-responsive">
+			<div class="col-lg-6 col-md-6 col-xs-12 qyjj">
+				<h3  class='col-xs-12'><a href="/dygsjj/nrgsjj.html">企业简介</a></h3>
+            	<p  class='col-xs-11'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;山西佳鑫人力资源管理咨询服务有限公司成立于2006年,是经山西省人力资源和社会保障厅批准的专业人力资源服务机构，拥有覆盖全省的人力资源寻访及客户服务网络。公司作为人力资源管理综合服务商和人才服务解决方案提供商，竭诚为客户提供各种人力资源综合管理服务。  十年来依托人才、人事与劳动保障系统等有关部门的业务支持…</p>
+			</div>
+		</div>
+	</div>
+<!-- 企业简介结束 -->
+<!-- 新闻资讯开始 -->
+<div class="container-fluid col-lg-12 col-md-12 col-xs-12" style="width:100%;height:auto;z-index: 0; ">
+	<div class="container row" style="margin:0 auto;height: auto;padding-left: 0;padding-right: 0;">
+		<h1 class="col-lg-12 col-xs-12 col-md-12 newsTitle" style="text-align:center;color:#7A7A7A;margin-bottom: 30px;z-index: 0"><a href="">新闻资讯</a></h1>
+		
+		
+        	<div class="col-md-4 col-lg-4 col-xs-12">
+            	<a title="关于工伤的最新规定 | 人社部发〔2016〕29号" href="">
+				<div class="newsBox line-space">
+                	<img src="img/201605061515527297.jpg" class="img-responsive">
+                    <h5>关于工伤的最新规定 | 人社部发〔2016〕29号</h5>
+                    <p>关于工伤的最新规定 | 人社部发〔2016〕29号</p>
+                </div>
+				</a>
+            </div>
+		  
+        	<div class="col-md-4 col-lg-4 col-xs-12">
+            	<a title="超12个省份下调社保费率   集中在工伤失业生育险" href="">
+				<div class="newsBox">
+                	<img src="img/201605061516120422.jpg" class="img-responsive">
+                    <h5>超12个省份下调社保费率   集中在工伤失业生育险</h5>
+                    <p>超过12个省市相继出台文件下调社保费率</p>
+                </div>
+				</a>
+            </div>
+		  
+        	<div class="col-md-4 col-lg-4 col-xs-12">
+            	<a title="山西实施参保登记计划 今年全面推行“五险统征”" href="">
+				<div class="newsBox">
+                	<img src="img/201605061509372297.jpg" class="img-responsive">
+                    <h5>山西实施参保登记计划 今年全面推行“五险统征”</h5>
+                    <p>今年我省将全面实施全民参保登记计划</p>
+                </div>
+				</a>
+            </div>
+		
+        <div class="row">
+        	<div class="col-md-12 col-lg-12 col-xs-12">
+            	<a href="" class="more">MORE</a>
+            </div>
+        </div>
+
+	</div>
+</div>
+
+<!-- 新闻资讯结束 -->
+<!-- 联系佳鑫人力专家开始 -->
+	<div class="container-fluid row rlzj " style="">
+		<div class="col-lg-12 col-md-12 col-xs-12 contact">
+			<a href="">
+				<img src="img/contact.jpg" class="img-responsive" alt="">
+			</a>
+		</div>
+	</div>
+<!-- 联系佳鑫人力专家结束 -->
+<!-- 登记信息开始 -->
+<div class="logoninfo" style=''>
+	<div class="row" style="margin:0; padding:0;">
+    	<div class="col-lg-6 col-md-12 col-xs-12" style="margin:0; padding:0;">
+          <img src="img/conpic.jpg" class="img-responsive bigpic" >
+        </div>
+        <div class="col-lg-6 col-md-12 col-xs-12 forminfo">
+          <h4>登记信息，佳鑫人力专业的服务顾问会在第一时间联络您</h4>
+          <form role="form" id="feedback_form" name="feedback_form" url="">
+            	<div class="row">
+                	<div class="col-lg-6 col-md-12 col-xs-12 form-group">
+                     	<label for="username">姓名*</label>            
+                        <input type="text" class="form-control" id="txtTitle" name="txtTitle" placeholder="您的姓名" datatype="*" sucmsg=" "> 
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12 form-group">
+                    	<label for="telphone">电话*</label>            
+                    	<input type="text" class="form-control" id="txtUserTel" name="txtUserTel" placeholder="您的电话" datatype="*0-20" sucmsg=" ">
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-lg-6 col-md-12 col-xs-12 form-group">
+                     	<label for="area">邮箱*</label>            
+                        <input type="text" class="form-control" id="txtUserEmail" name="txtUserEmail" placeholder="您的邮箱" datatype="*2-100" sucmsg=" "> 
+                    </div>
+                
+                </div>
+                <div class="row">
+                	<div class="col-md-12 form-group">
+                     	<label for="area">内容*</label> 
+                        <textarea class="form-control" id="txtContent" name="txtContent"  rows="3"  datatype="*" sucmsg=" "></textarea>           
+                    </div>
+                </div>
+				<div class="row">
+				&nbsp;&nbsp;&nbsp;&nbsp;<label for="area">验证码*</label> 
+				<input id="txtCode" name="txtCode" type="text" class="input small" datatype="*" sucmsg=" " />
+            <a href="javascript:;" onclick=""><img src="img/verify_code.jpg" width="80" height="22" align="absmiddle" /> 看不清楚？</a>
+         
+				</div>
+            	<button type="submit" class="btn btn-info">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 登记信息结束 -->
+<!-- 底部logo开始 -->
+<footer class="container col-lg-12 col-md-12 col-xs-12 footdiv" style="height:auto;background: #E6E6E6;margin-bottom: 20px; ">
+	<div class="row ">
+		<div class="col-lg-offset-2 col-lg-8 col-xs-12 footdiv1">
+			<div class="col-lg-12 col-xs-12 linkdiv">
+				<a href="">网站首页</a> / 
+				<a href="">关于佳鑫</a> / 
+				<a href="">新闻资讯</a> / 
+				<a href="">产品服务</a> / 
+				<a href="">招聘中心</a> / 
+				<a href="">联系我们</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-4 col-md-6 col-xs-12 footdiv2">
+			<img src="img/flogo.jpg" alt="" class="img-responsive">
+		</div>
+		<div class="col-lg-4 col-md-6 col-xs-12 footdiv2">
+			<div class="" style="text-align:right; padding-top:1%;">
+	            <p> 地址：太原市高新开发区创业街时代广场1408</p>
+	            <p>电话：0351-8066903</p>
+				<a href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+					<img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;">
+					<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">晋公网安备 14010502050227号</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+<!-- 底部logo结束 -->
+<!-- 咨询部分开始 -->
+<div class="askdiv">
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>保险咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>档案咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>公积金咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>业务咨询</span>
+	</a>
+	<a href="" id="qrcode">
+		<span class="glyphicon glyphicon-qrcode fontspan"></span>
+		<span>扫一扫关注</span>
+	</a>
+	<a href="" id="back-to-top">
+		<span class="glyphicon glyphicon-arrow-up fontspan"></span>
+		<span>返回顶部</span>
+	</a>
+	<div id="qrcode-show">
+		<img src="img/ewm.png" alt="">
+	</div>
+</div>
+<!-- 咨询部分结束 -->
+</body>
+<script type="text/javascript">
+	var app = angular.module('jxrl',[]);
+	app.controller('myTab',['$scope',function($s){
+		$s.t=1;
+	}])
+	$('#qrcode').hover(function(){
+		$('#qrcode-show').fadeIn(1000);
+	},function(){
+		$('#qrcode-show').fadeOut(1000);
+	})
+	$('#back-to-top').click(function(){
+		$('html,body').animate({scrollTop:0},200);
+		return false;
+	})
+</script>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='jxrl'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>关于</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+	
+	<!-- 导航条 -->
+	<div class="container-fluid jxrl-container">
+	  	<nav class="navbar navbar-static-top jxrlnav" role="navigation">
+		    <div class="container jxrl-container">
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+	     		 	<a href="#">
+	       		 		<img src="img/top_logo.png">
+	   	   		 	</a>
+	    	    </div>
+	    	  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	     			<ul class="nav navbar-nav navbar-right row navlink">
+	       				<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+		       				<a href="index.html">
+			       				<i class="iconfont">&#xe60a;</i>
+			       				<p>首页</p>
+		       				</a>
+	       				</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="about.html">
+		        				<i class="iconfont">&#xe607;</i>
+		        				<p>关于</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="news.html">
+		        				<i class="iconfont">&#xe88a;</i>
+		        				<p>新闻</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="services.html">
+		        				<i class="iconfont">&#xe88c;</i>
+		        				<p>服务</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="#">
+		        				<i class="iconfont">&#xe603;</i>
+		        				<p>招聘</p>
+	        				</a>
+	        			</li>
+	        			<li class="col-lg-2 col-md-2 col-xs-12 nav-ico">
+	        				<a href="contact.html">
+		        				<i class="iconfont">&#xe88b;</i>
+		        				<p>联系</p>
+	        				</a>
+	        			</li>
+	     			</ul>
+   			 	</div><!-- /.navbar-collapse -->
+		  	</div> <!-- /.container-fluid -->
+		</nav>
+	</div>
+	<!-- 导航条结束 -->
+	<!-- 广告banner开始 -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	 	 <!-- Indicators -->
+		  
+	
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			    <div class="item active ">
+			     	<div class="container banner">
+			     		<div class="row bannerdiv">
+			     			<h3 class="col-lg-12" style="font-size: 24px;color:#fff;font-family:'微软雅黑';">关于佳鑫</h3>
+			     			<p class="col-lg-12" style="color:#8CBBCD;font-size: 24px;">ABOUT JIA XIN</p>
+			     			
+			     		</div>
+			     	</div>
+			    </div>
+			   
+		  </div>
+  		<!-- Controls -->
+	 
+    </div>
+<!-- 广告banner结束 -->
+
+<!-- 非公共部分主体内容开始	 -->
+<div class="container middlediv" ng-controller='myaLink'>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-xs-12 alink">
+		<a href="" class="col-lg-1 col-md-3 col-xs-3" ng-class="{true:'afocus',false:''}[a==1]" ng-click='a=1'>公司简介</a>
+		<a href="" class="col-lg-1 col-md-3 col-xs-3" ng-class="{true:'afocus',false:''}[a==2]" ng-click='a=2'>企业文化</a>
+		<a href="" class="col-lg-1 col-md-3 col-xs-3" ng-class="{true:'afocus',false:''}[a==3]" ng-click='a=3'>管理团队</a>
+	</div>
+	</div>
+	
+	<div class="row mainbody" ng-show="a==1">
+		<h3 class="col-lg-12 col-md-12 col-xs-12 mainbody_title">关于佳鑫</h3>
+		<div class="col-lg-12 col-md-12 col-xs-12 mainbody_content">
+		 	<p style="text-indent:2em;">
+				<span style="line-height:2;color:#666666;font-size:16px;">&nbsp; 山西佳鑫人力资源管理咨询服务有限公司成立于2006年,</span><span style="line-height:2;text-indent:2em;color:#666666;font-size:16px;">是经山西省人力资源和社会保障厅批准的专业人力资源服务机构，拥有覆盖全省的人力资源寻访及客户服务网络。</span><span style="line-height:2;text-indent:2em;color:#666666;font-size:16px;">公司作为人力资源管理综合服务商和人才服务解决方案提供商，竭诚为客户提供各种人力资源综合管理服务。</span> 
+			</p>
+			<p style="text-indent:2em;">
+				<span style="line-height:2;color:#666666;font-size:16px;">&nbsp;十年来依托人才、人事与劳动保障系统等有关部门的业务支持，在全省邮政、邮储银行、物流、水利、电力等诸多领域，成功为数十家国有大型单位、数十万人次以上的劳动者提供了派遣服务、外包服务、招聘服务、代缴保险、档案管理、退休托管、人才测评、人事政策咨询、劳务法律顾问、劳动争议纠纷处理咨询等全方位的服务。</span> 
+			</p>
+			<p style="text-indent:2em;">
+				<span style="line-height:2;color:#666666;font-size:16px;">&nbsp;公司秉承“以人为本、客户至上、品质服务、追求卓越”的宗旨，本着“诚信、守法、专业、共赢”的理念，竭诚为企业和员工提供高品质人力资源管理咨询服务，尽力维护企业和员工的合法权益，以务实的工作态度和优良的服务，以专业、规范的操作和诚信高品质的服务与客户建立了紧密合作，协助客户专业有效地处理各种人事管理事务和协调各方关系，为服务单位与员工提供了一个既高效又安全方便的服务平台，从而赢得了政府部门与服务单位、劳动者的一致赞誉，成为企业和员工可信赖的合作伙伴。</span> 
+			</p>
+			<p style="text-indent:2em;">
+				<span></span>
+			</p>
+			<p style="text-indent:2em;">
+				<span><span style="line-height:2;color:#666666;font-size:16px;">&nbsp;公司将以不懈的追求和持续的创新精神，不断帮助客户适应时代发展变革，提升人力资本管理效能，为客户发展注入永续的生命力。</span><span style="line-height:2;color:#666666;font-size:16px;">&nbsp;</span></span> 
+			</p>
+			<p>
+				<span style="line-height:2;"><img style="width:100%;" alt="" src="img/201508281144201957.jpg" /><br/>
+				</span>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- 非公共部分主体内容结束 -->
+<!-- 底部logo开始 -->
+<footer class="container col-lg-12 col-md-12 col-xs-12" style="height:auto;background: #E6E6E6;margin-bottom: 20px;">
+	<div class="row ">
+		<div class="col-lg-offset-2 col-lg-8 footdiv1">
+			<div class="col-lg-12 linkdiv">
+				<a href="">网站首页</a> / 
+				<a href="">关于佳鑫</a> / 
+				<a href="">新闻资讯</a> / 
+				<a href="">产品服务</a> / 
+				<a href="">招聘中心</a> / 
+				<a href="">联系我们</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-4 col-md-6 col-xs-12 footdiv2">
+			<img src="img/flogo.jpg" alt="" class="img-responsive">
+		</div>
+		<div class="col-lg-4 col-md-6 col-xs-12 footdiv2">
+			<div class="" style="text-align:right; padding-top:1%;">
+	            <p> 地址：太原市高新开发区创业街时代广场1408</p>
+	            <p>电话：0351-8066903</p>
+				<a href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+					<img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;">
+					<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">晋公网安备 14010502050227号</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+<!-- 底部logo结束 -->
+<!-- 咨询部分开始 -->
+<div class="askdiv">
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>保险咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>档案咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>公积金咨询</span>
+	</a>
+	<a href="">
+		<span class="glyphicon glyphicon-user fontspan"></span>
+		<span>业务咨询</span>
+	</a>
+	<a href="" id="qrcode">
+		<span class="glyphicon glyphicon-qrcode fontspan"></span>
+		<span>扫一扫关注</span>
+	</a>
+	<a href="" id="back-to-top">
+		<span class="glyphicon glyphicon-arrow-up fontspan"></span>
+		<span>返回顶部</span>
+	</a>
+	<div id="qrcode-show">
+		<img src="img/ewm.png" alt="">
+	</div>
+</div>
+<!-- 咨询部分结束 -->
+</body>
+<script type="text/javascript">
+	var app = angular.module('jxrl',[]);
+	app.controller('myaLink',['$scope',function($s){
+		$s.a=1;
+	}])
+	$('#qrcode').hover(function(){
+		$('#qrcode-show').fadeIn(1000);
+	},function(){
+		$('#qrcode-show').fadeOut(1000);
+	})
+	$('#back-to-top').click(function(){
+		$('html,body').animate({scrollTop:0},200);
+		return false;
+	})
+	
+
+</script>
+</html>
